@@ -23,7 +23,7 @@ class Customer < ApplicationRecord
     super && (is_deleted == false)
   end
 
-  #フルネームを表示
+  #フルネームを表示するための記述
   def fullname
     self.last_name + self.first_name
   end
